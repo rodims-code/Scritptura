@@ -16,7 +16,7 @@
             const res = await api.post('api/token/', { email, password });
             localStorage.setItem(ACCESS_TOKEN, res.data.access);
             localStorage.setItem(REFRESH_TOKEN, res.data.refresh);
-            goto('/dashboard');
+            goto('/dashboard/student/');
         } catch (err) {
             error = "Email ou mot de passe incorrect.";
             console.error(err);
