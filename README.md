@@ -66,6 +66,36 @@ Le modèle relationnel suit cette structure principale :
 Le diagramme complet est modélisable sur https://dbdiagram.io.
 
 ---
+## 🛣️ Étapes de Développement (Roadmap du Projet)
+
+Le projet est développé suivant une approche méthodique divisée en **4 grandes phases** :
+
+### Phase 1 : Fondation Backend (API Django) ⏳ *[En cours]*
+- [x] Initialisation du projet Django et configuration de l'application `api`.
+- [x] Définition du modèle `User` personnalisé (avec génération automatique de `username`).
+- [x] Résolution des conflits de migration et mise en place de la base de données.
+- [x] Création des modèles relationnels (`Cursus`, `Livret`, `Lecon`, `Question`, etc.).
+- [x] Configuration de **Django Rest Framework** et intégration des tokens **Simple JWT** (Login/Register).
+- [ ] Personnalisation de l'interface **Django Admin** pour permettre la saisie facile des livrets et des questions par les administrateurs.
+
+### Phase 2 : Fondation Frontend (SvelteKit UI) 🎯 *[À venir]*
+- [ ] Initialisation de l'application SvelteKit avec configuration de **Tailwind CSS**, **DaisyUI** et **Lucide Svelte**.
+- [ ] Création des pages d'authentification épurées (Style minimaliste haut de gamme) : `Login` et `Register`.
+- [ ] Mise en place des **SvelteKit Hooks** et des stores pour intercepter les JWT de Django et sécuriser les sessions utilisateur.
+
+### Phase 3 : Espace Étudiant & Moteur de Leçons 📚
+- [ ] Design du Dashboard Étudiant : Suivi de la progression globale (relevé de notes numérique).
+- [ ] Développement des composants d'affichage dynamique pour les questions selon leur type (`QCM`, `Textes à trous`, etc.).
+- [ ] Gestion de la sauvegarde locale des brouillons de leçons en cours et système de soumission à l'API.
+
+### Phase 4 : Espace Correcteur & Validation 📊
+- [ ] Création du Dashboard Enseignant : Liste des leçons soumises en attente de correction.
+- [ ] Interface de correction humaine pour attribuer les points restants, valider le score final et ajouter des remarques textuelles.
+- [ ] Système de notifications et déblocage automatique de la leçon suivante après validation.
+
+---
+
+---
 
 ## ⚙️ Installation & démarrage (développement)
 
