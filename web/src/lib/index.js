@@ -1,6 +1,6 @@
 // place files you want to import through the `$lib` alias in this folder.
 import axios from "axios";
-import { ACCESS_TOKEN, REFRESH_TOKEN } from "./constants";
+import { ACCESS_TOKEN, REFRESH_TOKEN } from "./constants.js";
 // 1. On utilise l'import officiel de SvelteKit pour les variables d'env
 import { PUBLIC_API_URL } from '$env/static/public';
 import { browser } from '$app/environment';

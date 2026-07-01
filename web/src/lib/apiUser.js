@@ -1,5 +1,5 @@
-import api from "./index"
-import {ACCESS_TOKEN} from "./constants";
+import api from "./index.js";
+import { ACCESS_TOKEN } from "./constants.js";
 
 export async function fetchCurrentUser() {
   try {
@@ -13,7 +13,7 @@ export async function fetchCurrentUser() {
 }
 
 // Mettre à jour l'utilisateur connecté
-export async function updateCurrentUser(payload: any) {
+export async function updateCurrentUser(payload) {
   try {
     const res = await api.patch("api/user/me/", payload);
     return res.data;
